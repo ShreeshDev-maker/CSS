@@ -1,0 +1,17 @@
+ul, ol {
+  border: 1px solid;
+  width: 200px;
+}
+ol{
+  background-color: skyblue;
+  color: white;
+}
+ul{
+  background-color: lightgreen;
+}
+ul > li{
+  text-decoration: underline wavy 3px brown; 
+}
+ol > li{/*only list items in lists*/
+  text-decoration: underline dotted 3px indigo; 
+}
