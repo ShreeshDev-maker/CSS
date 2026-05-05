@@ -1,0 +1,31 @@
+body {
+  position: relative;
+}
+
+a {
+  position: relative;
+  display: inline-block;
+}
+
+a:hover::before {
+  content: "Matches when the user interacts with an element with a pointing device but does not necessarily activate it. It is generally triggered when the user hovers over an element with the cursor (mouse pointer).";
+  position: absolute;
+  top: 35px;
+  left: 0;
+  width: 300px;
+  height: max-content;
+  border: 2px solid;
+  background-color: cyan;
+  color: gray;
+  padding: 2px;
+  z-index: 1000;
+}
+a::after {
+  background-image: url(https://static-00.iconduck.com/assets.00/external-link-icon-256x256-m5z316qp.png);
+  background-size: 10px 10px;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  content:"";
+  margin-left: 2.5px;
+}
